@@ -1,0 +1,12 @@
+FROM python:3.12-slim
+# don't need this yet, no dependencies
+# COPY --from=ghcr.io/astral-sh/uv:latest /uv /uvx /bin/
+
+WORKDIR /app
+# don't need this yet, no dependencies
+# COPY pyproject.toml .
+# RUN uv sync --group controller
+
+COPY src/worker.py .
+
+CMD ["python", "worker.py"]
