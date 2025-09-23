@@ -2,7 +2,6 @@
 from flask import Flask, request, jsonify
 from kubernetes import client, config
 import uuid
-import os
 
 app = Flask(__name__)
 
