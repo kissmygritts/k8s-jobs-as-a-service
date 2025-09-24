@@ -84,6 +84,11 @@ kubectl delete pods --all
 kubectl delete services --all
 kubectl delete jobs --all
 ```
+
+Here is an image of what the running application, with terminal outputs, might look like.
+
+![screenshot](img/output.jpg)
+
 <details>
   <summary>Colophon</summary>
 
